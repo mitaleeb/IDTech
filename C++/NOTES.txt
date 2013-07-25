@@ -1,0 +1,262 @@
+C++ Notes
+
+"importing classes" is #include <...> 
+such as : 
+#include <string>
+
+input
+cin>>
+
+output
+cout <<
+LOOPS
+
+for (int i = 0; i<=10; i++){
+}
+
+while (condition){
+
+}
+
+
+
+do {
+
+{
+while (condition)
+
+For do while loops it will do it atleast once which can be used for infinite loops in gaming.
+
+switch statements syntax:
+switch (condition (usually a variable) ) 
+{
+	case condition1: 
+		do stuff
+		break;
+	case condition 2:
+		do stuff
+		break;
+	default:
+		stuff 
+		break;
+}
+
+break statements exit out of the switch statement once a 
+case becomes true, it exits the switch statement entirely.
+If the case is false it goes on to the next one. Always
+add break statements.
+
+Default statements are like "else" statements.
+
+
+
+
+
+ARRAYS
+
+type name [size] EXAMPLE : int arr [10]
+
+for loop: (user input)
+
+int arr [5];
+
+for (int i=0; i<5; i++) {
+
+cin>> arr [i];
+
+cout<< arr [i];
+}
+
+hardcode:
+
+arr [index number] = value
+
+arr [0]= ..
+arr [1] = ..
+so on and so forth...
+
+
+initialization: 
+
+int arr = {1,3,5,6,7};
+
+
+
+FUNCTIONS
+
+type name (params) 
+
+
+EX add function
+
+double add (double x, double y) {
+
+return x+y
+{
+
+Call the function: double z = add(x,y);
+
+void functions do not return anything, but can be used for functions such a printing which just cout
+
+
+
+
+
+CLASSES
+
+Class name {
+
+};
+
+Two types of classes, public can be accessed from anywhere and private is accessable only from the class that has it.
+
+two specific functions: get() and set()
+
+type.get(param)
+void.set(param) because you do not need a returned value
+
+
+
+
+
+EXTRA NOTES
+
+to create random  numbers in C++
+
+#include <time.h>
+srand(time(NULL));
+
+
+
+
+
+
+
+name
+dog
+speak - make noise such as bark, moo.
+
+
+POINTERS
+initialize a pointer : int* x = &y (X is pointing to the address of y)
+
+& y -address of y
+*- means points to
+
+dereference a variable/ give a poitner it's value 
+x=*y; (Assign the value that x is pointing to, to y)
+
+
+
+
+4 good thigns to being a programmer
+
+Debugger
+Formatting
+Google
+
+For C++ - usage of pointers
+
+
+
+
+
+
+
+Java's Collection Library:  java.util.Collections
+
+
+
+
+PYTHON
+
+NOTE:
+++ AND -- DO NOT EXIST IN PYTHON YOU MUST DO +=1 OR -=1
+
+
+
+USE FOUR SPACES OR A TAB NOT BOTH WHEN FORMATTING
+
+"CASTING" where print(str(x)+y) where x is string and y is int
+
+There are two kinds of input: input and raw input
+
+default RAWINPUT is string so make it casted into an int
+
+HOWEVER, INPUT is not defaulted to anything
+
+Either way just go safe and cast it to int for inputs alltogether
+
+All python arrays are dynamic and do "Arrayname".append to add a value "Arrayname".extend to add to the end of the list 
+NOTE PYTHON DOES NOT HAVE ARRAYS THEY HAVE LISTS
+
+
+list1= [1,2,3,4]
+
+list2= range(4) so the numbers in list2 would be 0,1,2,3
+
+list3 = range(10,15) left side inclusive right side exclusive.... the list3 would be 10,11,12,13,14
+
+
+
+if (condition):
+stuff
+
+
+elif (condition):
+stuff
+
+else :
+stuff
+
+
+SWITCH statements DON'T exist in python
+
+There are only two loops: while and for
+
+
+while (condition):
+do stuff
+
+For X IN LISTX:
+DO STUFF
+
+For X in range(1,50):
+do stuff
+
+
+INHERITENCE
+
+C++ - Class Cat: Pet
+Java- Class Cat extends Pet
+Python- Class Cat(Pet)
+
+def nameOfFunction(params)
+
+Constructors:
+ALL VARIABLES ARE DEFINED WITHIN THE CONSTRUCTOR
+YOU MUST PUT SELF AND THEN THE REST OF THE VARIABLES
+NO SUCH THING AS A DEFAULT CONSTRUCTOR
+
+def__init__(self,name, image):
+self.name=name
+self.image=image
+
+
+def function(self): 
+	print (...)
+
+THE FUNCTION HAVE ATLEAST THE ARGUMENT OF SELF!!! EVERYSINGLE ONE NO MATTER WHAT
+
+
+in stacks:
+
+.pop to get rid of something in the memory but it removes it from the bottom
+
+THe only difference from stacks and lists is that stacks have a pop and an add 
+
+
+
+
+
+
