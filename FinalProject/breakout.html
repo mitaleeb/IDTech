@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+  
+  <head >
+    <style type="text/css">
+
+  body {
+  background: linear-gradient(to right, blue, white);    
+   }
+ 
+  h1 {
+    color: white;
+    text-align: center;
+    font-family: fantasy;
+  } 
+
+  
+</style>
+  <meta charset="utf-8">
+  <title>Breakout</title>
+  <meta name="description" content="starterJS">
+  <meta name="author" content="roguequery">
+  <link rel="stylesheet" href="css/styles.css">
+    
+    
+  </head>
+  
+  <body>
+    <h1 id = "title">Welcome to Breakout</h1>
+    <div id="container"></div>
+    <script src="http://d3lp1msu2r81bx.cloudfront.net/kjs/js/lib/kinetic-v4.5.4.min.js"></script>
+    <script defer="defer">
+      var stage = new Kinetic.Stage({
+        container: 'container',
+        width: window.innerWidth,
+        height: window.innerHeight
+      });
+
+      var layer = new Kinetic.Layer();
+
+      
+      var circle = new Kinetic.Circle({
+        x: stage.getWidth() / 2,
+        y: stage.getHeight() / 2,
+        radius: 10,
+        fill: 'red',
+        stroke: 'black',
+        strokeWidth: 4 ,
+        draggable: true ,
+      });
+
+      var rect = new Kinetic.Rect({
+        x: 200, 
+        y: 50, 
+        width: 50,
+        height: 25,
+        fill: 'green',
+        stroke: 'black',
+        strokeWidth: 4
+      });
+
+      // add the shape to the layer
+       layer.add(rect);
+      for (var i = 0; i <=10; i++) {
+        layer.add(rect);
+        rect.x+=200;
+        rect.y+=50
+      };
+      
+
+      // add the shape to the layer
+      layer.add(circle);
+
+      // add the layer to the stage
+      stage.add(layer);
+
+       onMouseOver="alert('Hello out there!')";
+       onMouseOver(Circle)="alert('Hello out there!')";
+
+    </script>
+
+  </body>
+
+</html>
