@@ -1,0 +1,33 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script type="text/javascript" src="js/kinetic-v4.5.5.min.js"></script>
+</head>
+<body>
+ <div id="container"></div>
+    <script defer="defer" src="js/canvas.js"></script>
+    <div id="controls" style="width:50%;">
+      <p>Choose a color to paint with: </p>
+      </br>
+
+      <select name="Color" id="selectBox" onchange="changeColor()">
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="yellow">Yellow</option>
+        <option value="purple">Purple</option>
+        <option value="pink">Pink</option>
+        <option value="black">Black</option>
+        <option value="white">White</option>
+      </select>
+      <input type="reset" value="Erase" onClick="window.location.reload()">
+  </div>
+</body>
+</html>
+
+
+
+
+<!-- <a href="#" onClick="javascript:changeBGC('#000099')">Click Blue</a> -->
+<!-- <a href="#" onClick="javascript:changeBGC("red")">Click Red</a>
+ -->
